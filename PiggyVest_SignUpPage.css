@@ -1,0 +1,126 @@
+body{
+    background-color: #062863;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+/*--styling for the background images--*/
+#logo1{
+    position: fixed;
+    left:-0.5rem ;
+    top:-4rem;
+}
+#logo2{
+    position: fixed;
+    left: -3rem;
+    bottom:-3rem;
+}
+#logo3{
+    position: fixed;
+    right: -5.5rem;
+    top:0.1rem;
+}
+#logo4{
+    position: fixed;
+    right: -4rem;
+    bottom: -1rem;
+}
+
+h1 {
+    margin-top: 47px;
+    padding-bottom: -1rem;
+    margin-bottom: -1rem;
+    text-align: center;
+    color: white;
+}
+#piggyHome:link{
+   font-size: xx-large; 
+   text-decoration: none;
+   
+}
+#piggyHome:visited{
+    text-decoration: none;
+    color: inherit;
+}
+#piggyHome:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+div{
+    margin-top: 70px;
+    margin-left: 400px;
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 20px 0px;
+    border-style: hidden;
+    padding-left:38px;
+    padding-right: 38px;
+    padding-top: 10px;
+    line-height: 1;
+    width: 370px;
+    
+    
+}
+.log-in {
+    position: relative;
+    bottom:-5px ;
+    left:40%;
+    right:40%;
+}
+div h2, div p{
+    text-align: center;
+}
+div h2{
+    color: #083E9E;
+    margin-top: 3rem;
+    margin-bottom: -0.5rem;
+    padding-bottom: 0rem;
+}
+div p{
+    color: rgb(0 ,0 ,0,0.7);
+}
+form{
+    margin-top:4rem ;
+    
+}
+input, select{
+    margin-top: 0.1rem;
+    margin-bottom:3rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-color: #EDF2F7;
+    border: hidden;
+
+ }
+ select{
+     overflow:auto;
+ }
+ label{
+     font-size: smaller;
+     color:rgb(0 ,0 ,0,0.7);
+     font-weight: bold;
+ }
+ #Create-Account{
+     background-color: #0f49ad;
+     font-weight: bold;
+     color: white;
+     border-top-left-radius: 0.6rem;
+     border-bottom-right-radius: 0.6rem;
+     border-top-right-radius: 0.6rem;
+     height: 3rem;
+     font-size: 15px;
+ }
+ #Create-Account:hover{
+background-color: #062B6F;
+ }
+
+a:link{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+a:hover{
+    color:#A2B3A1;
+}
+
