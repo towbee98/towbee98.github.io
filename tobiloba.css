@@ -1,0 +1,178 @@
+body{
+margin: 1;
+padding: 0;
+font-family: sans-serif;
+background-color: #F9F9FF;
+}
+header{
+    background-color: lightblue;
+    font-size: medium;
+    font-weight: bold; 
+    height: 50px; 
+    padding-right: 0;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    margin:-1.5rem 2rem 0 0;
+    box-sizing:content-box;
+}
+.container{
+    width: 100%;
+    display: block;
+    
+}
+nav ul{
+    list-style: none;
+    margin: 0 0 0 0;
+    
+}
+
+.logo{
+    float:left;
+    margin-top: 0.5rem;
+    margin-left: 0.4rem;
+    width: 4rem;
+}
+nav{
+    float: left;
+}
+nav li{
+    display: inline-block;
+    padding-left:0rem;
+    margin-top: 3px;
+    
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+#biodata{
+    display: block;
+    width: 100%;
+    margin-bottom:0;
+}
+.img{
+    width: 80%;
+    margin-bottom: 3rem;
+    height: 238px;
+}
+.img img{
+    width: 50%;
+    height: 238px;
+}
+.img2{
+    width: 100%;
+    height: 300px;
+}
+.img2 img{
+    width: 50%;
+    height:300px;
+}
+.About-Me{
+    display: block;
+    width: 80%;
+    margin-bottom: 4rem;
+
+}
+h3{
+    margin-left: 3rem;
+}
+#Contact{
+    width:min-content;
+    background-color: lightblue;
+    padding:1rem;
+    margin-left: 3rem;
+}
+form{
+    margin-top:4rem ;
+    
+}
+input, select{
+    margin-top: 0.1rem;
+    margin-bottom:3rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-color: #EDF2F7;
+    border: hidden;
+
+ }
+ select{
+     overflow:auto;
+ }
+ label{
+     font-size: smaller;
+     color:rgb(0 ,0 ,0,0.7);
+     font-weight: bold;
+ }
+.Social-Media{
+    background-color: #04091E;
+    padding-left: 2rem;
+    color: ivory;
+}
+@media (min-width:560px){
+    header{padding-right: 4rem;
+        height: 40px;
+        background-color: lightblue;
+        font-size: medium;
+        font-weight: bold; 
+        position:sticky;
+        top: 0;
+        width: 100%;
+        margin:-1.5rem 2rem 0 0;
+        box-sizing:content-box; 
+    }
+    .logo{
+        float:left;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: 5rem;
+    }
+    nav{
+        float: right;
+    }
+    nav li{
+        display: inline-block;
+        padding-left:1rem;
+        margin-top: 4px;
+        
+    
+    }
+    nav ul{
+        margin: 0 2rem 0 0;
+
+    }
+    #biodata{
+        float: left;
+        display: block;
+        width: 50%;
+        margin-bottom:0;
+    }
+    .img{
+        float: right;
+        width: 50%;
+        margin-bottom: 4rem;
+        height: 238px;
+    }
+    .img2{
+        float: left;
+        width:50%;
+
+    }
+    .About-Me{
+        float: right;
+        display: block;
+        width: 50%;
+        height: 300px;
+        margin-bottom: 4rem;
+        overflow-y: auto;
+    }
+    
+}
+@media (min-width:1189px){
+   .About-Me{
+    overflow: hidden;
+    height: max-content;
+   } 
+}
