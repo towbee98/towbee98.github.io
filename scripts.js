@@ -116,16 +116,16 @@ function question(b){
 
 function callbackA(clicker){  
      for(p=0;p<3;p++){
-            if(answers.includes($optionA.innerHTML)){
+            if(answers.includes($optionA.innerText)){
                 $optionA.style["background-color"]="green";
              }
-            else if(answers.includes($optionB.innerHTML)){
+            else if(answers.includes($optionB.innerText)){
                 $optionB.style["background"]="green";    
             }
-            else if(answers.includes($optionC.innerHTML){
+            else if(answers.includes($optionC.innerText)){
                 $optionC.style["background-color"]="green";
              }
-        }
+        };
     if(answers.includes(clicker)===true){
         event.target.style["background-color"]="green";
         score++;
