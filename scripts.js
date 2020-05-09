@@ -116,13 +116,13 @@ function question(b){
 
 function callbackA(clicker){  
      for(p=0;p<3;p++){
-            if(answers.includes($optionA.innerText)){
+            if(answers.includes($optionA.innerHTML)){
                 $optionA.style["background-color"]="green";
              }
-            else if(answers.includes($optionB.innerText)){
+            else if(answers.includes($optionB.innerHTML)){
                 $optionB.style["background"]="green";    
             }
-            else if(answers.includes($optionC.innerText){
+            else if(answers.includes($optionC.innerHTML){
                 $optionC.style["background-color"]="green";
              }
         }
