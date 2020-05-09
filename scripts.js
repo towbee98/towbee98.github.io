@@ -114,7 +114,19 @@ function question(b){
      console.log(answers.includes(optionsArr[0]));
 }
 
-function callbackA(clicker){  
+function callbackA(clicker){ 
+    
+     for(p=0;p<3;p++){
+            if(answers.includes($optionA.innerHTML)){
+                $optionA.style["background-color"]="green";
+             }
+            else if(answers.includes($optionB.innerHTML)){
+                $optionB.style["background"]="green";    
+            }
+            else if(answers.includes($optionC.innerHTML)){
+                $optionC.style["background-color"]="green";
+             }
+        }
     if(answers.includes(clicker)===true){
         event.target.style["background-color"]="green";
         score++;
