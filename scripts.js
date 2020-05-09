@@ -126,13 +126,13 @@ function callbackA(clicker){
     }
         for(p=0;p<optionsArr.length;p++){
             if(answers.includes(optionsArr[p])){
-                $optionA.innerHTML.style["background-color"]="green";
+                $optionA.style["background-color"]="green";
              }
             else if(answers.includes(optionsArr[p])){
-                $optionB.innerHTML.style["background"]="green";    
+                $optionB.style["background"]="green";    
             }
             else if(answers.includes(optionsArr[p])){
-                $optionC.innerHTML.style["background-color"]="green";
+                $optionC.style["background-color"]="green";
              }
         }
      
