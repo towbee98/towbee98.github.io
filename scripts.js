@@ -115,16 +115,7 @@ function question(b){
 }
 
 function callbackA(clicker){  
-    if(answers.includes(clicker)===true){
-        event.target.style["background-color"]="green";
-        score++;
-        update($score,score);
-        console.log(score);
-        }
-    else{
-        event.target.style["background-color"]="red";
-    }
-        for(p=0;p<optionsArr.length;p++){
+     for(p=0;p<optionsArr.length;p++){
             if(answers.includes(optionsArr[p])){
                 $optionA.style["background-color"]="green";
              }
@@ -135,6 +126,16 @@ function callbackA(clicker){
                 $optionC.style["background-color"]="green";
              }
         }
+    if(answers.includes(clicker)===true){
+        event.target.style["background-color"]="green";
+        score++;
+        update($score,score);
+        console.log(score);
+        }
+    else{
+        event.target.style["background-color"]="red";
+    }
+       
      
     count++;
     update($start,"Next");
