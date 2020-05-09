@@ -125,7 +125,7 @@ function callbackA(clicker){
             else if(answers.includes($optionC.innerText)){
                 $optionC.style["background-color"]="green";
              }
-        };
+        }
     if(answers.includes(clicker)===true){
         event.target.style["background-color"]="green";
         score++;
