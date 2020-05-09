@@ -123,6 +123,7 @@ function callbackA(clicker){
         }
     else{
         event.target.style["background-color"]="red";
+    }
         for(p=0;p<optionsArr.length;p++){
             if(answers.includes(optionsArr[p])){
                 $optionA.innerHTML.style["background-color"]="green";
@@ -134,7 +135,7 @@ function callbackA(clicker){
                 $optionC.innerHTML.style["background-color"]="green";
              }
         }
-     }
+     
     count++;
     update($start,"Next");
     $start.style["display"]="block";
