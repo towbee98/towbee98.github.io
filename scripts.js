@@ -28,7 +28,7 @@ var options=[["Amaju Pinnick","Sani lulu","Femi Adeshina"],
     ["1945","1918","1928"]
 ];
 var answers=["Amaju Pinnick","774","1963","calabar","Bauchi State",
-"Ikeja Bridge","Isoko","love,loyalty and Unity","1984","1918"];
+"Ikeja Bridge","Isoko","love,loyalty and Unity","1980","1918"];
 var i=0;
 var score=0;
 var click=0;
