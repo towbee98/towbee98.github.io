@@ -1,0 +1,294 @@
+body {
+    background-color:#FCFCF0;
+    overflow-x: hidden;
+}
+/* --this is for the search button */
+span > button{
+    width: 55px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: white;
+    border:thin;
+    margin-bottom: 1px;
+    padding-bottom: 2px;
+
+}
+span > button:hover{
+    background-color:#E8ECE0 ;
+}
+/* --this should be for the links-- */
+a:link{
+    text-decoration: none;
+    font-weight: bold;
+    color:#181860;
+    font-size: medium;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+a:visited{
+    text-decoration: none;
+    font-weight: bold;
+    color:#671848;
+}
+/*the first class*/
+#Nairaland-logo{
+    width:240px;
+     height:20px;
+}
+.top-menu{
+    border-radius: 12px;
+    margin: 1px 150px 0.4px 150px;
+    background-color:#F6F6EC;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-width: thin ;
+    line-height: 1;
+    font-size: 0.9rem;
+    text-align: center;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-menu h1, .top-menu p[class=profile ], .top-menu p[class=Stats]{
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+}
+.top-menu a{
+    font-weight: 100;
+}
+.top-menu h1  img:hover{
+    text-decoration: underline;
+}
+.top-menu .Stats{
+    text-align: center;
+}
+.top-menu  .Search {
+    text-align: center;
+    word-spacing: normal;
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+.top-menu  #Searchbar{
+    border-radius: 10px;
+    resize:none;
+    width: 500px;
+    height: 25px;
+    border:black;
+    margin-bottom: 1px;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*--Second Class--*/
+.forums{
+    border-radius: 12px;
+    margin: 6px 150px 1px 150px;
+    padding-left: 0rem;
+    padding-right: 0px;
+    line-height:1;
+    border-style: solid;
+    border-width: thin;
+    border-collapse:separate;
+    border-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    table-layout: auto;
+}
+.forums th h3 {
+    color: #220000;
+    margin: 0.5rem 0rem; 
+}
+.forums .General p, .Technology p, .Entertainment p{
+    margin: 0.7rem 0rem;
+}
+
+ .forums .General, .Entertainment, th{
+    border-bottom: 1px solid black;
+    padding-top: 0rem;
+ }   
+.forums .General, .Technology{
+    background-color: #F6F6EC;
+}
+
+.forums th, .Entertainment{
+    background-color: #E8ECE0;
+}
+.forums h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+     
+}
+.forums .General, .Entertainment, .Technology{
+    padding-left: 1rem;
+}
+/*--third --*/
+.advertisement{
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin: 6px 170px 1px 160px;
+    display: inline;
+    width: auto;
+}
+.advertisement  img{
+    border-style: solid;
+    border-width: thin;
+    border-color: grey ;
+    border-radius: 0.5rem;
+    width: 24.2%;
+    height: 100px;
+
+}
+/* --fourth class-- */
+.social-media, .headlines, .pages {
+    margin-left:150px;
+    margin-right:150px;
+    padding-top: 1px;
+    line-height:0.3;
+    border-style: solid;
+    border-width: thin;
+    width:auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .social-media, .headlines{
+    border-bottom: 1px solid black;
+}
+ .social-media{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: small;
+    font-weight: bolder;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1px;
+}
+
+ .headlines {
+    background-color: #F6F6EC;
+    font-size: 1rem;
+    font-weight: 50px;
+    line-height: 1;
+}
+ .social-media, .pages{
+    background-color: #E8ECE0;
+}
+.pages{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 1px;
+}
+/*--theSixth class--*/
+.Users-Stats{
+    border-radius: 12px;
+    margin: 1px 150px 0.4px 150px;
+    background-color: #F6F6EC;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-width: thin ;
+    line-height: 0.5;
+    font-size: 0.9rem;
+    text-align: center;
+}
+/*--thSeventh class--*/
+.footer{
+    border-radius: 12px;
+    margin: 1px 150px 0.4px 150px;
+    background-color: #F6F6EC;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-width: thin ;
+    line-height: 0.5;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 100;
+}
+.footer  .Search {
+    text-align: center;
+    word-spacing: normal;
+    display: flex;
+}
+.footer  #Searchbar{
+    border-radius: 10px;
+    resize:none;
+    width: 500px;
+    height: 25px;
+    border:black;
+    margin-bottom: 1px;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+@media (max-width:800px){
+    .top-menu{
+        margin: 1px 2px 0.4px 2px;
+        height: fit-content;
+        font-size: 0.9rem;
+    }
+    #Nairaland-logo{
+        width:50%;
+         height:15px;
+    }
+    .top-menu .Search #Searchbar{
+        resize:none;
+        width: 50%;
+        height: 20px;
+        border:black;
+        margin-bottom: 1px;
+        margin-left:auto;
+    }
+    
+    span > button{
+        width: fit-content;
+        height: 20px;
+        margin-right: auto;
+    }
+    .forums{
+        margin: 6px auto 1px ;
+        width: auto;  
+    }
+    .advertisement{
+        margin: 6px 0px 1px 0px;
+    }
+    .advertisement img{
+        display: block;
+        width: 100%;
+
+    }
+    .advertisement a .adv2, .advertisement a .adv3{
+        display:none;
+    }
+    .social-media, .headlines,.pages{
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height:0.9;
+        width: auto;   
+    }
+    .Users-Stats{
+        margin-left:0px;
+        margin-right:0px;
+        font-size: x-small;
+        line-height: 0.8;
+    }
+    .footer{
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 0.9;
+        font-size: x-small;
+    }
+    .footer  #Searchbar{
+        margin-left:auto;
+        width: 50%;
+    }
+   
+
+
+}
+
