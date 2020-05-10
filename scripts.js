@@ -1,5 +1,5 @@
 //Welcomer the user
-alert("Welcome  to Sabi Naija Quiz naija!!!");
+alert("Welcome  to Sabi Naija Quiz App!!!");
 
 var quiz={
     description:"how much do you know about naija?",
