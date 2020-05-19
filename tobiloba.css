@@ -158,7 +158,7 @@ header{
     color: white;
 }
 h3{
-    font-family: cursive;
+    font-family: sans-serif;
     color: red;
     font-size: 30px;
 }
@@ -172,7 +172,7 @@ h3{
 .myskills .heading{
    color: red;
     font-size: 30px;
-   font-family: cursive;
+   font-family: sans-serif;
    text-align: center;
    
 }
@@ -194,7 +194,7 @@ h3{
 .Projects .heading{
    color: red;
     font-size: 30px;
-   font-family: cursive;
+   font-family: sans-serif;
    text-align: center;
    margin-bottom: 10px;
 }
@@ -224,7 +224,7 @@ footer{
     width:100%;
     margin: 0 2rem ;
     color: white;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 form{
     width: 70%;
@@ -244,7 +244,7 @@ input{
      font-size: large;
      color:red;
      font-weight: bold;
-     font-family: cursive;
+     font-family: sans-serif;
  }
  #message{
      width: 98%;
@@ -259,7 +259,7 @@ input{
     width: 10rem;
     background-color:red ;
     color: white;
-    font-family: cursive;
+    font-family: sans-serif;
 }
  input:hover{
     color: blue;
@@ -275,7 +275,7 @@ input{
     bottom: 0.5;
     left: 0px;
     padding-left: 5px;
-    font-family: cursive;
+    font-family: sans-serif;
     background: linear-gradient(-120deg,rgb(200,200,200),rgb(170,100,100));
 }
 .Social-Media img:hover{
@@ -334,7 +334,7 @@ input{
        width: 100%;
        background-color:red ;
        color: white;
-       font-family: cursive;
+       font-family: monospace;
    }
 }
 
