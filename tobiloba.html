@@ -2,102 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Oladele Tobiloba">
+    <meta name="description" content="My profile webpage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="tobiloba.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <b>Tobliloba's Page</b>
-            <nav>
+    <div class="backdrop"></div>
+    
+        <header>
+            <div>
+                <svg width="100"  height="50" border="4" stroke="grey">
+                    <circle 
+                    cx="35" cy="28" r="17" fill="red"
+                    /> 
+                    <rect width="25" height="20" 
+                    x="22" y="18" fill="white" 
+                    style="stroke:red;"/>
+                    <line x1="28" y1="23" x2="41" y2="23"
+                    style="stroke-width: 3;
+                    stroke:red;
+                    stroke-linecap: round;"/>
+                    <line x1="35" y1="26" x2="35" y2="34"
+                    style="stroke-width: 3;
+                    stroke:red;
+                    stroke-linecap: round;"/>
+                </svg>
+            </div>
+            <button class="toggle-btn">
+                <span class="toggle-btn-bar"></span>
+                <span class="toggle-btn-bar"></span>
+                <span class="toggle-btn-bar"></span>
+            </button>
+            <nav class="Content">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#biodata">Biodata</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About-Me">About</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
-    </header>
-    <h1>Home</h1>
-    <p>Welcome to my personal profile webpage</p>
-    <div id="biodata">
-       <h2> Biodata</h2>
-        <p><b>Name</b>:Oladele Tobiloba Emmanuel<br>
-            <b>Phone</b>:08124013264<br>
-            <b>Email</b>:tobiemma200@gmail.com<br>
-           <b>State of Origin</b>:Osun State<br>
-           <b>Date of Birth</b>:18/09/1998<br>
-           <b>Address</b>:Hope road alakia ibadan oyo State<br>
-           <b>Occupation</b>: Student<br>
-           <b>Hometown</b>: ede<br>
-           <b>Slack ID</b>:Tobiloba<br>
-        </p>
-    </div>
-    <div class="img" ><img src="tobiloba.jpg" alt=""></div>
-    <br>
-    <br>
-    <div class="img2">
-        <img src="towbaba.jpg" alt="">
-    </div>
-    <div class="About-Me">
-        <h2>About Me</h2>
-        <p>Oladele Tobiloba is  a 300 level  computer Science student of 
-            the university of Ibadan.He is a frontend developer.</p>
-        <p>He has passion for web development and right from his 
-            secondary school days , he has always dreamt of being a 
-            full stack developer.His main hobby is coding.When he is not 
-            in front of his computer,he is probably sleeping or reading a 
-            novel.He is a southpaw and also an introvert.</p>
-        <p>His strengths include:
-            <ul>
-                <li>Good Oral and Communication Skills</li>
-                <li>Innovative</li>
-                <li>Team Spirit</li>
-                <li>Attention To details</li>
+        </header>
+        
+            <ul class="dropdown">
+                <li id="link1"><a href="#">Home</a></li>
+                <li id="link2"><a href="#About-Me">About</a></li>
+                <li id="link3"><a href="#Contact">Contact</a></li>
             </ul>
-         </p>  
-         <p> He took part in a coding challenge called "The 30-30 challenge" organized by one of his 
-             lecturers in school.A challenge where students are given tasks to solve using a particular 
-             programming language. He is currently undergoing an internship programme organised by start.ng.
-             This program has been of immense benefit to him.As he has improved greatly since the beginning 
-             of the  program.
-        </p>
-        <p>Here is a link  to some of his projects on his github page:-
-            <ul>
-                <li><a href="towbee98.github.io/Google HomePage.html">Google Homepage clone</a></li>
-                <li><a href="towbee98.github.io">Quiz App</a></li>
-                <li><a href="towbee98.github.io/Piggyvest_SignUpPage.html">Piggyvest HomePage CLone</a></li>
-                 <li><a href="towbee98.github.io/nairaland_homepage.html">nairaland homepage clone</a></li>
-            </ul>
-        </p>
-              
+    
+    <br>
+    <div class="flexbox">
+        <div id="biodata">
+            THIS IS ME
+            <h3> TOBI OLADELE</h3>
+            <p>An aspiring web developer,currently undergoing an 
+                internship programme with start.ng.
+            </p>
+        </div>
+        <div id="img" >    
+        </div>
+    </div>
+    <section class="flexbox2">
+        <div id="img2">
+        </div>
+        <div id="About-Me">
+            ABOUT ME
+            <h3>PERSONAL DETAILS</h3>
+            <p>Oladele Tobiloba is  a 300 level  computer Science student of 
+                the university of Ibadan.He has flair for website designing  and development.
+                He has excellent team spirit and 
+                very innovative. He also has very good oral and communication skills.
+            </p>
+        </div>
+    </section>
+    <section class="myskills">
+        <div class=heading>
+            My Skills
+        </div>
+        <div class="types">
+        <div id="html-css"><img src="html5-brands.svg"  height="150px" width="70px"></div>
+        <div id="graphics"><img src="graphic-desig.svg"  height="150px" width="70px"></div>
+        <div id="Javascript"><img src="js-brands.svg"  height="150px" width="70px"></div>
     </div>
     </section>
-    <footer>
-        <h2>Contact Us</h2>
+    <section class="Projects">
+        <div class=heading>My Works</div>
+        <div class="list">
+        <div class="myproject"><a href="#"><img src="NaialandClone.png" alt="" width="100px" height="200px"></a></div>
+        <div class="myproject"><a href="#"><img src="PiggyVestSignUp.png" alt="" width="100px" height="200px"></a></div>
+        <div class="myproject"><a href="#"><img src="QuizApp.png" alt="" width="100px" height="200px"></a></div>
+        </div>
+    </section>
+    <section class="gallery">
+        
+    </section>
         <div id="Contact">
-            
+            <h3>Contact me anytime</h3>
             <form action="#" method="post">
-                <label for="Full name">Full name</label><br>
-                <input type="text" name="Full name" id="Full-name" placeholder="Enter your name"><br>
-                <label for="Phone number">Phone Number</label><br>
-                <input type="tel" name="Phone Number" id="Phone-number" placeholder="Phone number"><br>
-                <label for="Email">Email</label><br>
-                <input type="email" name="Email" id="Email" placeholder="Email" required><br>
+                <label for="Full name">Full name</label>
+                <input type="text" name="Full name" id="Full-name" placeholder="Enter your name">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Email" required >
                 <label for="Message">Message</label><br>
-                <textarea placeholder="enter your message here" resize="none" id=message></textarea><br>
-                <input type="submit" value="Submit"><br>
+                <textarea placeholder="enter your message here" resize="none" id=message></textarea>
+                <input type="submit" value="Submit" class="submit">
             </form>
         </div>
-        <div class="Social-Media">
-            <h3>Follow me</h3>
-            <a href="#"><img src="download.png" alt="" width="20px" height="30px"></a>
-            <a href=""><img src="images.png" alt="" width="20px" height="30px"></a>
-            &#169;2020
-        </div>
-        
-
-    </footer>  
+    <div class="Social-Media">
+        <h3>Follow me</h3>
+        <a href="https://mobile.twitter.com/Oladtobi97"><img src="twitter.svg" width="20px" height="20px"></a>
+        <a href="https://web.facebook.com/emma.daniel.773"><img src="fb-logo2.svg" width="20px" height="20px"></a>
+        <a href="https://wa.me/08124013264"><img src="whatsapp.svg"  width="20px" height="20px" alt=""></a>
+        <h6>Copyright &#169;2020 All rights reserved | Created by Tobiloba</h6> 
+    </div>
+    <script src="tobiloba.js"></script>
 </body>
 </html>
