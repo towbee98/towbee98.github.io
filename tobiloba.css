@@ -112,7 +112,6 @@ header{
     color: black;
     border-radius: 0 10px 0 10px;
     max-width: 400px;
-    font-style: italic;
     height: fit-content;
     padding:5px 0;
     font-size: 1rem;
@@ -154,7 +153,6 @@ header{
 #About-Me{
     font-size: 1rem;
     max-width: 400px;
-    font-style: normal;
     color: white;
 }
 h3{
