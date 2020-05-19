@@ -68,7 +68,7 @@ header{
 
 }
 .dropdown {
-    position:absolute;
+    position:fixed;
     z-index:2;
     top: 20;
     right: 0;
