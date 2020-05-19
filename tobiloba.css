@@ -1,15 +1,7 @@
 :root{
     --my-display:flex;
 }
-.backdrop{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.7;
-    background-color: gray;
-    display:none;
-}
+
 body{
 margin: 0;
 padding: 0;
@@ -68,14 +60,14 @@ header{
 
 }
 .dropdown {
-    position:sticky;
+    position:fixed;
     z-index:2;
     top: 20;
     right: 0;
     background: white;
     width: 80%;
     height: max-content;
-    font-family: cursive;
+    font-family: san-serif;
     font-size: 80px;
     display: none;
     list-style: none;
@@ -94,6 +86,15 @@ header{
     color: red;
     font-size: xx-large;
 
+}
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.7;
+    background-color: gray;
+    display:none;
 }
 
 .flexbox{
@@ -118,7 +119,7 @@ header{
 }
 #biodata  h1{
     color: red;
-    font-family: cursive ;
+    font-family: sans-serif;
     font-size: 4rem;
 }
 .flexbox #img {
