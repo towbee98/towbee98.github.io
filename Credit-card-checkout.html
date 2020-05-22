@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Page</title>
+    <link rel="stylesheet" href="Credit-card-checkout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="index.jpg" alt="">
+            <p>Brand new School bag</p>
+            <h2># 4 500</h2>
+        </div>
+        <div class="payment-details">
+            <img src="visa.png" alt="" width="50px">
+            <img src="master-card.png" alt="" width="50px">
+            <form action="#" method="GET" >
+                <label for="card-number">CREDIT CARD NUMBER</label><br>
+                <input type="tel" name="" id="card-number" inputmode="numeric" pattern="[0-9]{16}" autocomplete="cc-number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required><br>
+                <label for="Card-holder">CARD HOLDER</label><br>
+                <input type="text" name="" id="Card-holder"   placeholder="Cardholder" required><br>
+                
+                <label for="expiration" class="expiration">EXPIRATION DATE</label><br>
+                <input type="tel" name="" id="expiration" pattern="[0-9]{2}/[0-9]{2}" required placeholder="MM/YY" >
+                <label for="cvv" class="cvv">CVV</label><br>
+                    <input type="tel" name="" id="cvv" pattern="[0-9]{3}" placeholder="CVV" required><br>
+                
+                <input type="submit" value="PURCHASE" id="purchase"><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
