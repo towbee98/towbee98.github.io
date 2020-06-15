@@ -5,10 +5,10 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
     opacity: 0;
     background-color: gray;
-    transition: opacity 400ms ease-out 1s ;
+    transition: opacity 400ms ease-out 1s,z-index 400ms ease 1s;
 }
 
 body{
@@ -79,7 +79,7 @@ header{
 }
 .dropdown {
     position:fixed;
-    z-index:2;
+    z-index:3;
     top: 20;
     right: 0;
     background: white;
@@ -290,7 +290,7 @@ input{
     width: 10rem;
     background-color:red ;
     color: white;
-    font-family: san-serif;
+    font-family: sans-serif;
 }
  input:hover{
     color: blue;
@@ -306,7 +306,7 @@ input{
     bottom: 0.5;
     left: 0px;
     padding-left: 5px;
-    font-family: san-serif;
+    font-family: sans-serif;
     background: linear-gradient(-120deg,rgb(200,200,200),rgb(170,100,100));
 }
 .Social-Media img:hover{
