@@ -32,7 +32,7 @@ function addSuffix(date){//this function adds appropriate suffix to the date e.g
     }
     else if(date%10===3){
         date=String(date)+"rd ";
-    }
+    } 
     else{
         date=String(date)+"th ";
     }
