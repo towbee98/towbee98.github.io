@@ -8,7 +8,6 @@ fullName=form.elements[0];
 email=form.elements[1];
 message=form.elements[2];
 submit=form.elements[3];
-
 clicks=0;
 clickedDropdownOptions=false;
 $toggleBtn.addEventListener("click",toggleBtnHandler);

@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 30px 15px 0px 15px ;
     background-color: rgb(255, 217, 176);
-    font-family:cursive;
+    font-family:sans-serif;
 }
 .container{
     display: flex;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List App</title>
+    <link rel="stylesheet" href="ToDo-List.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="dateHolder"><div class="Today"></div>
+                <div class="clear">
+                    <div class="curl1"></div>
+                    <div class="curl2"></div>
+                </div>
+            </div>
+            <div class="TaskDetails">
+                <span class="total"></span>
+                <span class="remaining"></span>
+                <span class="done"></span>
+                <span class="title">Total</span>
+                <span class="title">Remaining</span>
+                <span class="title">Done</span>
+            </div>
+        </header>
+        <div class="Contents">
+            <div id="TaskList">
+            <h4>Tasks for today</h4>
+            </div>
+            <div class="Add">
+                <svg width="25" height="30" class="AddTask">
+                    <path d="M 10 0 L 10 10 L 0 10 L 0 15 L10 15 L10 25 L15 25 L15 15 L 25 15 L25 10 L15 10 L 15 0Z "
+                        style="stroke:blue;fill:blue;"/>
+                 </svg>
+                <svg width="25" height="30" class="submit">
+                    <path d="M 1 10 L 1 15 L 8 8 L 8 25 L11 25 L11 8 L18 15 L18 10 L 9.5 0Z "
+                        style="stroke:blue;fill:blue;"/>
+                </svg>
+             
+                <input type="text" name="AddTask" id="newTask" placeholder="Add new Task" maxlength="40">
+            </div>
+        </div>
+    </div>
+    <script src="ToDo-List.js">
+
+    </script>
+</body>
+</html>
