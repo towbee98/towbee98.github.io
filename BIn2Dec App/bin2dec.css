@@ -1,0 +1,91 @@
+body{
+    animation: colorchange 20000ms 3s infinite alternate-reverse;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    align-items:flex-start;
+    width: 400px;
+    height: 500px;
+    border-radius: 4px;
+    padding:10px;
+
+}
+h1{
+    color: rgb(202, 71, 136);
+}
+h3{
+    color: yellow;
+}
+.operation{
+background-color: rgb(129, 126, 126);
+color: honeydew;
+border-radius: 5px;
+font-family: cursive;
+padding: 3px;
+}
+textarea{
+    margin: 30px 0  10px 0;
+    width: 200px;
+    resize: none;
+    font-size: medium;
+    line-height: 1.5;
+}
+button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(103, 233, 103);
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: none;
+}
+button:hover{
+    background-color: rgb(8, 163, 8);
+}
+.result{
+    display: none;
+     color: white;
+     background: blue;
+     font-size: large;
+     font-weight: bold;
+     border-radius: 5px;
+     width: 50%;
+     padding: 5px;
+     margin: 3px;
+}
+.error-message{
+    display: none;
+    background: rgb(255, 199, 208);
+    color: rgb(240, 38, 72);
+    font-size: x-small;
+}
+
+@keyframes colorchange{
+    0%{
+        background-color: #ff0000;
+    }
+    20%{
+        background-color: #ff1188;
+    }
+    40%{
+        background-color: #ff8800;
+    }
+    60%{
+        background-color: #ffaa55;
+    }
+    80%{
+        background-color: #ffff99;
+    }
+    100%{
+        background-color: #ffffff;
+    }
+}

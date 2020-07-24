@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary2DEcimal Converter</title>
+    <link rel="stylesheet" href="bin2dec.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Decimal Converter</h1>
+        <div class="operation">
+        <h3>Conversion</h3>
+            <input type="radio" name="digit" value="binaryToDecimal" class="type">
+            <label for="binary2decimal">Binary to decimal</label><br>
+            <input type="radio" name="digit" value="decimalToBInary" class="type">
+            <label for="decimal2binary">Decimal to binary</label><br>
+        </div>
+            <textarea class="user-input" placeholder="Enter the number to convert here" type="number"></textarea>
+        <p class="error-message">Enter a valid number to convert !</p>
+        <button id="Convert">Convert</button>
+        <div class="result">Answer: </div>
+    </div>
+    <script src="bin2dec.js"></script>
+</body>
+</html>

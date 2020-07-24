@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 30px 15px 0px 15px ;
+    background-color: rgb(255, 217, 176);
+    font-family:sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: rgb(255, 217, 176);
+}
+.myform{
+    background-color: black;
+    color: white;
+    width: 35%;
+    padding: 15px 0px 10px 25px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.myform form{
+    width: 70%;
+    line-height: 2.6;
+}
+.myform #name, #Phone,#time,#food{
+    border:transparent;
+    background: black;
+    color: white;
+    width:100%;
+    height: 25px;
+}
+.myform #name,#Phone{
+    line-height: 2;
+}
+#time,#food{
+    color: grey;
+}
+.images{
+    width: 62%;
+}
+.images img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+}
+label{
+    color: #E6B17D;
+    font-size: x-small;
+}
+#Submit{
+    background: rgb(230, 177, 125);
+    border: transparent;
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-family: cursive;
+    font-size: 1rem;
+}
+ #name:hover,#Phone:hover{
+     border-bottom: solid;
+     border-color: white;
+ }
+ #Submit:hover{
+     background-color: rgb(245, 149, 47);
+
+ }
+ .images2{
+     display: none;
+ }
+ 
+ @media(max-width:862px){
+     .container{
+         justify-content: center;
+     }
+     .myform{
+         width: 100%;
+         border-bottom-right-radius: 0;
+         border-top-right-radius: 15px;
+         border-top-left-radius: 15px;
+     }
+     .myform form{
+         width: 80%;
+     }
+     .images{
+         width: 100%;
+         height: auto;
+     }
+     .images img{
+         border-top-left-radius:0 ;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .images2{
+        display: block;
+        width: 100%;
+
+    }
+    .images2 img{
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+ }
+ @media(max-width:290px){
+    #Submit{
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    
+ }
