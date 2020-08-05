@@ -57,6 +57,19 @@ header{
     display: block;
     margin: 0.3rem 0;
 }
+.toggle1{
+    opacity: 1;
+    transition: opacity 500ms ease-out 1s;
+}
+.toggle2{
+    transform: rotateZ(0deg);
+    transform-origin: 0;
+    transition: transform 500ms  ease-out 1s;
+}
+.toggle3{
+    transform: rotateZ(0deg);
+    transition: transform 500ms ease-out 1s;
+}
 .Content ul{
     display: flex;
     list-style: none;
@@ -156,6 +169,7 @@ header{
     box-shadow: 2px 2px 6px gray,-2px -2px 5px gray;
     position: relative;
     overflow: hidden ;
+    
 }
 .flexbox2 #img2{
     height: 300px;
@@ -174,10 +188,11 @@ header{
     max-width: 400px;
     color: white;
 }
+
 .Heading{
     font-size: larger;
     position: absolute;
-    left: 0;
+    left: 500px;
     top: 0;
     background-color: red;
     padding: 3px;
@@ -187,7 +202,9 @@ header{
     transform-origin: 50% 50%;
     width: 10rem;
     text-align: center;
+    transition: left 5000ms ease-in 1s ;
 }
+
 h3{
     font-family: sans-serif;
     color: red;
@@ -347,6 +364,8 @@ input{
         display: none;
     }
 
+
+
 }
 @media(max-width:348px){
     #Contact{
@@ -379,3 +398,4 @@ input{
         transform: rotateY(0);
     }
 }
+
