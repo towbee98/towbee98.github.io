@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Appd</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+</head>
+<body>
+ <div class="container">
+        <div class="header">
+            <h1>Simple Weather App</h1>
+            <img class="search" src="search-icon.png" alt="x">
+            <nav class="circle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </nav>
+            <form>
+                <input type="search" name="search-input" id="search" placeholder="Search" autofocus>
+                <button type="submit">SUBMIT</button>
+            </form>
+            <div class="options">
+                <p class="settings">Settings</p>
+            </div>
+        </div>
+        <div class="city">
+            <h2 class="city-name">
+            </h2><sup class="symbol"></sup>
+            <figure>
+                <img class="weather-icon" src="" alt="">
+                <div class="weather-details">
+                    <span class="city-temp"></span><sup>°</sup>
+                <figcaption></figcaption>
+                </div>
+            </figure>
+        </div>
+        <div class="information">Search a city to  get the weather condition</div> 
+    </div>
+    <script src="WeatherApp.js"></script>
+</body>
+</html>
