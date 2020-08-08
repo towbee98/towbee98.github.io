@@ -90,10 +90,14 @@ section{
 .picture{
     width: 100%;
     height: 50%;
+    
 }
 .picture img{
+    position: relative;
     width: 100%;
     height: 100%;
+    animation: mover 2000ms  1s 1 forwards ;
+    left: -200px;
 }
 footer{
     display: grid;
@@ -174,7 +178,6 @@ section{
     width: 50%;
     font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 .picture{
     width: 50%;
@@ -264,11 +267,11 @@ footer{
 }
 @keyframes mover {
     0%{
-        top: -200px;
+        left: -200px;
     }
     
     100%{
-        top:90px;
+        left:auto;
     }
 
 }
