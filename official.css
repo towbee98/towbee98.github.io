@@ -1,0 +1,400 @@
+body{
+    background: #ECF0F3;
+    color: #193566;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+.menu{
+    display: block;
+    position: absolute;
+    top: -500px;
+    right: 40px;
+    z-index: 1;
+    background:rgba(91, 144, 155, 0.4);
+    border-radius:10px;
+    padding: 10px;
+    transition:top 500ms ease-in-out 1s;
+}
+.menu li{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.toggle-bar div{
+    margin-bottom: 2px;
+    width: 18px;
+    height: 3px;
+    border-radius: 35px;
+    background: black;
+}
+.toggle-bar div:first-child{
+    opacity: 1;
+    transition: opacity 500ms ease-in 1s;
+}
+.toggle-bar div:nth-child(2){
+transform: rotateZ(0deg);
+transform-origin:left;
+transition: transform 500ms ease-in 1s;
+}
+.toggle-bar div:last-child{
+transform-origin: bottom;
+transform: rotateZ(0deg) translateY(0px) translateX(0px);
+transition: transform 500ms ease-in 1s;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bolder;
+    letter-spacing: -3px;
+}
+.options{
+    display: none;
+}
+ .others li,.social-handles li{
+    margin-right:40px;
+}
+a:link{
+    text-decoration: none;
+    color: #193566;
+}
+a:visited{
+    text-decoration: underline;
+    color: #193566;
+}
+.login{
+    margin: 0;
+    width: max-content;
+    border:1.5px solid #193566;
+    border-radius: 20px;
+    padding: 30px 5px 10px 5px;
+    height: max-content;
+    position: relative; 
+    top: -1000px;
+    animation: mover 5000ms 1s 1  forwards;
+}
+.welcome{
+    position: absolute;
+    top: -10px;
+    background: border-box;
+    background-color: #ECF0F3;
+    padding: 0 10px;
+    font-weight: bolder;
+    font-size: small;
+    margin-left: 10px;
+}
+form{
+    margin: 2px 1px 2px 0px;
+    width: auto;
+}
+#login-Id,#password{
+    width: 12rem;
+    background-color: #ECF0F3;
+    height: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border-color: #193566;
+    outline: none;
+    padding: 6px;
+    line-height: 7;
+    font-size: medium;
+    box-shadow: none;
+}
+#login-Id{
+    margin-bottom: 40px;
+}
+#login-Id:focus,#password:focus{
+    outline: none;
+    border: none;
+    border-bottom: solid #193566;
+    border-radius: 0;
+}
+#Submit{
+    margin: 15px 0 auto 0;
+    background-color: #ECF0F3;
+    border-radius: 20px;
+    padding:5px 20px;
+    border-color:#193566 ;
+    outline:none;
+    color: #193566;
+}
+#Submit:hover{
+    background-color: #aeb7be;   
+}
+.error-message,.success{
+    font-size: small;
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+    opacity: 0;
+    padding: 2px;
+    border-radius:2px;
+}
+.error-message{
+    background: rgb(212, 18, 18);
+}
+.success{
+    background: rgb(35, 233, 35);
+}
+label{
+    margin: 10px;
+    font-size: small;
+}
+.container{
+    display: grid;
+    grid-template-rows: 460px auto;
+}
+footer{
+    display: grid;
+    height: 10rem;
+    background:rgb(209, 217, 230);
+    grid-template-rows: 80%  20%;
+    grid-template-areas: "others"
+                        "copyright";
+    margin:-10px;   
+}
+.Copyright{
+    grid-area:copyright;
+    margin: auto;
+}
+.others,.social-handles{
+    display: flex;
+}
+.above{
+    grid-area:others;
+    display:flex;
+    flex-direction:column;
+    border-bottom:0.5px solid;
+}
+.info{
+    display:grid;
+    grid-template-columns:40px 97px;
+    grid-template-rows:50px 45px;
+}
+.info h2{
+    font-family:Georgia,'Times New Roman',Times, serif;
+    letter-spacing:-3px;
+}
+.info p{
+    grid-column-start: 1;
+    grid-column-end:-1 ; 
+    font-size: x-small; 
+    line-height: 0.8; 
+    margin-top: 3px; 
+}
+.info span{
+    margin: auto 0 0 0;
+    font-size:x-small;
+    text-align: center;
+    font-weight: 1000;
+    font-family: sans-serif;
+    letter-spacing: -1.5px;
+}
+.others{
+    width:max-content;
+}
+.others li{
+    margin-right: 10px;
+}
+
+@media(min-width:495px){
+.toggle-bar{
+    display: none;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.options li{
+    margin-right: 20px;
+}
+.login{
+    margin: auto;
+    width: 45%;
+    border:1.5px solid #193566;
+    border-radius: 53px;
+    padding: 30px 65px 10px 50px;
+    height: max-content;
+    position: relative;
+    top: 90px;
+    
+}
+.welcome{
+    position: absolute;
+    top: -10px;
+    background: border-box;
+    background-color: #ECF0F3;
+    padding: 0 10px;
+    font-weight: bolder;
+    font-size: small;
+}
+form{
+    margin: 2px 1px 50px;
+    width: auto;
+}
+#login-Id,#password{
+    width: 100%;
+    background-color: #ECF0F3;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border-color: #193566;
+    outline: none;
+    padding: 6px;
+    line-height: 7;
+    font-size: medium;
+    box-shadow: none;
+}
+#Submit{
+    margin: 15px 40% auto 40%;
+    background-color: #ECF0F3;
+    border-radius: 20px;
+    padding:5px 20px;
+    border-color:#193566 ;
+    outline:none;
+    color: #193566;
+}
+.error-message,.success{
+    font-size: small;
+    position: absolute;
+    bottom: 27px;
+    right: 40%;
+    opacity: 0;
+    padding: 2px;
+    border-radius:2px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 460px 15% ;
+}
+footer{
+    display: grid;
+    height: 10rem;
+    background:rgb(209, 217, 230);
+    grid-template-rows: 60%  40%;
+    grid-template-areas: "others"
+                          "copyright " ;
+    margin:-10px;   
+}
+.above{
+    grid-area: others;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    border-bottom: 0.5px solid;
+}
+}
+@media(min-width:597px){
+    form{
+        margin: 2px 1px 50px;
+        width: auto;
+    }
+    .login{
+        margin: auto;
+        width: 45%;
+        border:1.5px solid #193566;
+        border-radius: 53px;
+        padding: 30px 65px 10px 50px;
+        height: max-content;
+        position: relative;
+        top: 90px;
+        
+    }
+    .toogle-bar{
+        display:none;
+    }
+    .options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .options li{
+        margin-right: 30px;
+    }
+    .welcome{
+        position: absolute;
+        top: -10px;
+        background: border-box;
+        background-color: #ECF0F3;
+        padding: 0 10px;
+        font-weight: bolder;
+        font-size: small;
+    }
+    #login-Id,#password{
+        width: 100%;
+        background-color: #ECF0F3;
+        height: 30px;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color: #193566;
+        outline: none;
+        padding: 6px;
+        line-height: 7;
+        font-size: medium;
+        box-shadow: none;
+    }
+    #Submit{
+        margin: 15px 40% auto 40%;
+        background-color: #ECF0F3;
+        border-radius: 20px;
+        padding:5px 20px;
+        border-color:#193566 ;
+        outline:none;
+        color: #193566;
+    }
+    .error-message,.success{
+        font-size: small;
+        position: absolute;
+        bottom: 27px;
+        right: 40%;
+        opacity: 0;
+        padding: 2px;
+        border-radius:2px;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 460px 15% ;
+    }
+    footer{
+        display: grid;
+        height: 10rem;
+        background:rgb(209, 217, 230);
+        grid-template-rows: 60%  40%;
+        grid-template-areas: "others"
+                              "copyright " ;
+        margin:-10px;   
+    }
+    .above{
+        grid-area: others;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        border-bottom: 0.5px solid;
+    }
+}
+@keyframes mover {
+    0%{
+        top: -200px;
+    }
+    
+    100%{
+        top:90px;
+    }
+
+}

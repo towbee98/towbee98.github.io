@@ -20,15 +20,15 @@ submit.addEventListener('click',function(){
         console.log("done");
         makeApiCall(url);
     }
-    form.style.top="-10px";
-    form.style.opacity=0;
+    form.style.top="-100px";
+    form.style.opacity="0";
     input.value="";
 })
 
 function makeApiCall(url){
     let xhr=new XMLHttpRequest();
-    console.log(xhr.readyState)
-    xhr.onreadystatechange=function(){
+    console.log(xhr.readyState);
+    xhr.onreadystatechange=() =>{
         if(xhr.readyState===4 && xhr.status===200){
             console.log(xhr.responseText);
             localStorage.setItem(name,xhr.response);
