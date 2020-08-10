@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: #1B1711;
+    display: flex;
+    color: white;
+    padding: 10px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.options{
+    display:flex;
+    justify-content: space-evenly;
+}
+.options li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+.order{
+    background: red;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding:8px 30px;
+    font-size: x-large;
+}
+.Sign-in{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    background: rgb(241, 11, 11);
+    box-shadow: rgb(151, 139, 139);
+    min-width: 120px;
+    padding: 8px 2px;
+    z-index: 1;
+    text-align: center;
+}
+.Sign-in li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.order:hover  .Sign-in{
+    display: block;
+}
+.Shop{
+    background: url("food-picture1.jpg") 10px 20px/cover no-repeat scroll;
+    height: 600px;
+    padding: 300px 40% 0px 40% ;
+}
+.Shop div{
+    position: absolute;
+    text-align: center;
+}
+.About-us{
+    text-align: center;
+}
+.About-us div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: url("food-picture2.jpg") 10px 20px/contain no-repeat scroll;
+}
+h3{
+    text-align: center;
+}
