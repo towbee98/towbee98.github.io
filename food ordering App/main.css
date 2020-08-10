@@ -20,7 +20,7 @@ header{
     margin-right: 20px;
 }
 a:link{
-    color: white;
+    color: rgb(253, 250, 250);
     text-decoration: none;
 }
 .order{
@@ -47,17 +47,31 @@ a:link{
     list-style-type: none;
     margin-bottom: 10px;
 }
+#log-in,#register{
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    right:-200px;
+    border-radius: 10px;
+    opacity: 0;
+    transition:right 500ms ease-out 1s;
+}
+#log-in input,#register input{
+    margin-bottom: 15px;
+}
 .order:hover  .Sign-in{
     display: block;
 }
 .Shop{
-    background: url("food-picture1.jpg") 10px 20px/cover no-repeat scroll;
+    background: url("food-picture1.jpg") 10px 20px/100% no-repeat scroll;
     height: 600px;
-    padding: 300px 40% 0px 40% ;
+    padding: 300px 30% 0px 20% ;
 }
 .Shop div{
     position: absolute;
     text-align: center;
+    color: white;
+    font-size: xx-large;
 }
 .About-us{
     text-align: center;
@@ -69,12 +83,17 @@ a:link{
     justify-content: space-between;
 }
 footer{
+    color: white;
+    font-size: x-large;
+    height: 600px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    background: url("food-picture2.jpg") 10px 20px/contain no-repeat scroll;
+    justify-content: center;
+    background: url("food-picture2.jpg") 1px 5px/100% 100% no-repeat scroll;
 }
 h3{
     text-align: center;
+    margin-bottom: 0;
 }
