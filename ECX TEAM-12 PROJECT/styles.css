@@ -1,0 +1,95 @@
+header{
+    background: #2B3252;
+    padding: 10px 10px;
+    color: #FAD744;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    margin: -10px;
+
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.logo span{
+    color: #EF5455;
+}
+.toggle-btn{
+    display: block;
+    margin-right: 500px;
+}
+.box{
+    width: 23px;
+    margin-bottom: 4px;
+    height: 2px;
+    background-color: yellow;
+}
+.toggle-bar-1{
+    opacity:1;
+    transition: opacity 700ms ease-in-out 1s;
+}
+.toggle-bar-2{
+    transform: rotateZ(0) translateX(0);
+    transition: transform 700ms ease-in-out 1s;
+}
+.toggle-bar-3{
+    transform: rotateZ(0) translateX(0) translateY(0);
+    transform-origin: center;
+    transition: transform 700ms ease-in-out 1s;
+}
+.main-nav{
+    position: absolute;
+    top: 35px;
+    left: -300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    background-color: #2B3252;
+    align-items: center;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    transition: left 700ms ease-in-out 1s ;
+}
+.main-nav span{
+    margin-top: 70px;
+}
+ a{
+     text-decoration: none;
+    color: yellow;
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:  10px -10px  0 -10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FAD744;
+    justify-content: center;
+    height: 100vh;
+}
+.introduction{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+.register{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.register div{
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border-color: #F59A4B;
+    font-size: small;
+}
+.register div:hover{
+    background: #EF5455;
+    font-size: medium;
+}
