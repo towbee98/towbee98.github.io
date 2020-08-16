@@ -60,46 +60,143 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-size:medium;
     transition: left 700ms ease-in-out 1s ;
-    z-index: 2;
+    z-index: 10;
 }
 .main-nav span{
     margin-top: 70px;
 }
  a{
      text-decoration: none;
-    color: #FFFFFF;
+    color: #C2C1BA;
+}
+h3{
+    text-align: center;
+    color: white;
+    margin-bottom: -5px;
 }
 section{
     font-family: Arial, Helvetica, sans-serif;
     margin-top:20px;
-    display: flex;
-    flex-direction:row;
-    background-color: #FFFFFF;
-    justify-content: space-between;
+    width: 75%;
     position: absolute;
+    background-color:rgba(101, 102, 102, 0.8);
+    top: -1000px;
+    z-index: 3;
+    padding: 10px 25px 10px 25px;
+    border-radius: 30px;
+    text-align: center;
+    animation: movedown 2000ms  1s 1 forwards ;
 }
-.register{
+.user-icon{
+    position: absolute;
+    top: -30px;
+    left: 45%;
+    z-index: 1;
+    width: 50px;
+    opacity: 0.5;
+}
+
+form{
+    width: 100%;
+}
+
+.input-field{
+    margin-top:10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color:  #F3F0E0;
+    border-radius: 13px;
+    position: relative;
+    left: -1000px;
+    animation: moveright 5000ms  1s 1 forwards ;
 }
-.register div{
-    border: 1px solid;
-    padding: 5px 10px;
-    border-radius: 15px;
-    border-color: #EF5455;
-    font-size: medium;
+i{
+    padding: 10px;
+    min-width: 0px;
+    text-align: center;
+    color: #7B7E8B;
 }
-.register div:hover{
-    background: #EF5455;
+#username,#password{
+    padding: 10px;
+    background-color:  #F3F0E0;
+    outline: none;
+    border: none;
+    position: relative;
+    left:0;
+    width: 70%;
+    margin-right: 5px;
 }
+#login-btn{
+    width:100%;
+    height:50px;
+    margin-top:10px;
+    border-radius:13px;
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: #C2C1BA;
+    font-size: large;
+    letter-spacing: 2px;
+    bottom: -10000px;
+    animation: moveUp 5000ms  2s 1 forwards;
+    
+}
+#login-btn:hover{
+    background-color: #cfcfcf;
+}
+.remember{
+    margin-left: -10px;
+    margin-right: 60px;
+}
+.forgot-password{
+    margin-right: 0;
+}
+label{
+    font-size: x-small;
+    color: #c3c5c7;
+}
+.line-through{
+    width: 97%;
+    height: 2px;
+    margin-top: 20px;
+    background: #e0e5e9;
+    margin-bottom: -5px;
+}
+p{
+    font-size: xx-small;
+    color: #c7cbcf;
+}
+
 .illustration{
     background: #EF5455;
-
     position: absolute;
     right:-1000px ;
     animation: moveLeft 2000ms  1s 1 forwards ;
     display: inline-block;
+}
+.illustration::before{
+    border-top: 340px solid transparent;
+    border-bottom: 340px solid transparent;
+    border-right: 140px solid #EF5455;
+    content: "";
+    height: 0;
+    left:-140px;
+    position: absolute;
+}
+.Successful-login,.Unsuccessful-login{
+    display: none;
+}
+@keyframes movedown{
+    0%{
+        top: -1000px;
+    }
+    100%{
+        top: 200px;
+    }
 }
 @keyframes moveright{
     0%{
@@ -107,7 +204,7 @@ section{
     }
     100%{
         left: 0;
-    }
+    }  
 }
 @keyframes moveLeft{
     0%{
@@ -115,15 +212,23 @@ section{
     }
     100%{
         right: 0;
-    }  
-}
-
-@media(min-width:400px){
-    .introduction{
-        margin: auto;
     }
 }
-@media(min-width:700px){
+@keyframes moveUp{
+    0%{
+        bottom: -10000px;
+    }
+    100%{
+        bottom:0;
+    }
+}
+@media(min-width:350px){
+    #username,#password{
+        width: 100%;
+        margin-right: 7px;
+    }
+}
+@media(min-width:500px){
     header{
         display: flex;
         flex-direction: row;
@@ -136,14 +241,19 @@ section{
     section{
         font-family:Arial, Helvetica, sans-serif;
         margin:  auto;
+        width: 250px;
         display: block;
-        background-color: #FFFFFF;
         height: max-content;
-        position: absolute;
-        top: 200px;
-        left: 150px;
+        position: absolute;  
+        padding: 10px 55px 10px 55px;
+        left: 30%; 
     }
-    
+    form{
+        margin-right:20px;
+    }
+    .input-field{
+        width: 100%;
+    }
     .illustration{
         right: -1000px;
         width: 50%;
@@ -159,21 +269,15 @@ section{
         position: absolute;
         width:0;
     }
+    i{
+        padding: 10px;
+    }
+   
 }
 @media(min-width:1195px){
-    @keyframes moveright{
-        0%{
-            left: -1000px;
-        }
     
-        50%{
-            left: 0;
-        }
-        100%{
-            left: -50px;
-        }
-    }
     body{
         overflow-y: hidden;
     }
+
 }

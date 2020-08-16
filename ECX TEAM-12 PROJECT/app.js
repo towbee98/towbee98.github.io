@@ -19,4 +19,16 @@ toggleBtn.addEventListener('click',function(){
     }
     click++
 })
+mainNav.addEventListener('click',function(){
+    for(let i=0;i<mainNav.children.length;i++){
+        if(event.target.textContent==mainNav.children[i].textContent){
+                    click++;
+                    mainNav.style.left="-300px";
+                    toggleBar1.style.opacity="1";
+                    toggleBar2.style.transform="rotateZ(0) translateX(0)";
+                    toggleBar3.style.transform="rotateZ(0) translateX(0) translateY(0)";
+                    break;
+        }
+    }
+})
 

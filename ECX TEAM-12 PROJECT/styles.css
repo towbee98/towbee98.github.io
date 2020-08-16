@@ -107,6 +107,9 @@ section{
 .register div:hover{
     background: #EF5455;
 }
+.register div a{
+    color: black;
+}
 .illustration{
     width: 100vh;
     background: #EF5455;
@@ -125,7 +128,6 @@ section{
     top:-1000px;
     animation: movedown 2000ms  3s 1 forwards ;
 }
-
 @keyframes moveright{
     0%{
         left: -1000px;

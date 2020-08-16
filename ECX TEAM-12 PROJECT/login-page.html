@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login-page.css">
+    <link rel="stylesheet" href="/CSS/css/all.css">
 </head>
 <body>
     <header>
@@ -16,24 +17,32 @@
     <div class="logo">Budg<span>etify</span></div>
 </header>
 <nav class="main-nav">
-        <span><a href="#">Home</a></span>
-        <span><a href="#">Login</a></span>
-        <span><a href="#">About Us</a></span>
-        <span><a href="#">Contact Us</a></span>
-        <span><a href="#">Privacy Policy</a></span>
+        <span class="Home"><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT">Home</a></span>
+        <span class="Login"><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">Login</a></span>
+        <span class="About-Us"><a href="#">About Us</a></span>
+        <span class="Contact"><a href="#">Contact Us</a></span>
+        <span class="Privacy"><a href="#">Privacy Policy</a></span>
 </nav>
 <section>
+    <img src="user-icon.png" alt="" class="user-icon">
     <h3>Sign In</h3>
     <form action="#" method="POST">
-        <input type="text" name="username" id="username" placeholder="USERNAME"><br>
-        <input type="password" name="password" id="password" placeholder="PASSWORD"><br>
+        <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="USERNAME" required>
+        </div><br>
+        <div class="input-field">
+            <i class="fas fa-lock"></i>
+        <input type="password" name="password" id="password" placeholder="PASSWORD" required>
+        </div><br>
         <input type="submit" value="Login" id="login-btn"><br>
-        <input type="checkbox" name="remember-me" id="remember-me">
-        <p>Forgot Password?</p>
-    </form>
+        <div class="Successful-login">Login Successful!</div>
+        <div class="Unsuccessful-login">Invalid Username or password!</div>
+        <span class="remember"><input type="checkbox" name="remember-me" id="remember-me"><label>Remember me</label></span>
+        <label for="Forgot-password" class="forgot-password"><a href="#">Forgot Password?</a></label>
+    </form> 
     <div class="line-through"></div>
     <p>Don't have an account ? <a href="#">REGISTER HERE</a></p>
-
 </section>
 <div class="illustration"></div>
 <script src="login-page.js"></script>
