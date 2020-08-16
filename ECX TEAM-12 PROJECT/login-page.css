@@ -1,6 +1,5 @@
 body{
     overflow-x: hidden;
-    overflow-y: auto;
 }
 header{
     background: #2B3252;
@@ -75,22 +74,9 @@ section{
     margin-top:20px;
     display: flex;
     flex-direction:row;
-    flex-wrap: wrap;
     background-color: #FFFFFF;
     justify-content: space-between;
-}
-.introduction{
-    position: relative;
-    text-align: center;
-    width: 200px;
-    height: max-content;
-    margin: auto auto 0 auto;
-    height: 300px;
-    left: -1000px;
-    animation: moveright 2000ms  1s 1 forwards;
-    z-index: 1;
-    font-size: 12px;
-    color: #2B3252;
+    position: absolute;
 }
 .register{
     display: flex;
@@ -108,24 +94,13 @@ section{
     background: #EF5455;
 }
 .illustration{
-    width: 100vh;
     background: #EF5455;
-    margin: 0 -20px 0 -10px;
-    position: relative;
-    right: -1000px;
+
+    position: absolute;
+    right:-1000px ;
     animation: moveLeft 2000ms  1s 1 forwards ;
     display: inline-block;
-
 }
-.illustration img{
-    margin-top: 50px ;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top:-1000px;
-    animation: movedown 2000ms  3s 1 forwards ;
-}
-
 @keyframes moveright{
     0%{
         left: -1000px;
@@ -142,14 +117,7 @@ section{
         right: 0;
     }  
 }
-@keyframes movedown{
-    0%{
-        top:-1000px;
-    }
-    100%{
-        top: 0;
-    }
-}
+
 @media(min-width:400px){
     .introduction{
         margin: auto;
@@ -167,32 +135,19 @@ section{
     }
     section{
         font-family:Arial, Helvetica, sans-serif;
-        margin:  10px -10px  -10px -10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        margin:  auto;
+        display: block;
         background-color: #FFFFFF;
-        justify-content: flex-start;
-        height: 100vh;
+        height: max-content;
+        position: absolute;
+        top: 200px;
+        left: 150px;
     }
-    .introduction{
-        position: relative;
-        text-align: center;
-        width: 250px;
-        margin: auto;
-        height: 50vh;
-        left: -1000px;
-        animation: moveright 2000ms  1s 1 forwards;
-        z-index: 1;
-        font-size: 15px;
-    }
+    
     .illustration{
+        right: -1000px;
         width: 50%;
         height: 100vh;
-    }
-    .illustration img{
-        width: 100%;
-        height: 80%;
     }
     .illustration::before{
         border-top: 340px solid transparent;
