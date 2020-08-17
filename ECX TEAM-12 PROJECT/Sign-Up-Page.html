@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="Sign-Up-Page.css">
+    <link rel="stylesheet" href="/CSS/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="toggle-btn">
+            <div class="toggle-bar-1 box"></div>
+            <div class="toggle-bar-2 box"></div>
+            <div class="toggle-bar-3 box"></div>
+        </div>
+        <div class="logo">Budg<span>etify</span></div>
+    </header>
+    <nav class="main-nav">
+        <span class="Home"><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT">Home</a></span>
+        <span class="Login"><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">Login</a></span>
+        <span class="About-Us"><a href="#">About Us</a></span>
+        <span class="Contact"><a href="#">Contact Us</a></span>
+        <span class="Privacy"><a href="#">Privacy Policy</a></span>
+</nav>
+<section>
+    <img src="register-user.png" alt="" class="user-icon">
+    <h3>Register</h3>
+    <form action="#" method="POST">
+        <div class="user-details">
+            <div class="input-field">
+                <label for="username" class="user-1">USERNAME</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username"required >
+            </div>
+            <div class="input-field">
+                <label>FULLNAME</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Enter Fullname" required>
+            </div>
+        </div>
+        <div class="user-details">
+            <div class="input-field">
+                <label for="e-mail" class="user-1">E-MAIL</label>
+                <input type="email" name="email" id="email" placeholder="Enter E-mail" required>
+            </div>
+            <div class="input-field">
+                <label for="">PASSWORD</label>
+            <input type="password" name="password" id="password" placeholder="Input Password" required>
+            </div>
+        </div>
+            <input type="submit" value="Sign Up" id="Sign-up">
+        <div class="Successful-login">Registeration Successful!</div>
+        <div class="Unsuccessful-login">Use a valid user input</div>
+    </form> 
+</section>
+<div class="illustration"></div>
+<script src="Sign-Up-page.js"></script>
+</body>
+</html>
