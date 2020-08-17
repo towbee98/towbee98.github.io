@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/CSS/css/all.css">
+    <link rel="stylesheet" href="user-profile.css">
+</head>
+<body>
+    <header>
+        <div class="toggle-btn">
+            <div class="toggle-bar-1 box"></div>
+            <div class="toggle-bar-2 box"></div>
+            <div class="toggle-bar-3 box"></div>
+        </div>
+        <div class="logo">Budg<span>etify</span></div>
+    </header>
+    <nav class="main-nav">
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/index.html">Home</a></span>
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">Login</a></span>
+            <span><a href="#">Profile</a></span>
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">Log Out</a></span>
+            <span><a href="#">About Us</a></span>
+            <span><a href="#">Contact Us</a></span>
+            <span><a href="#">Privacy Policy</a></span>
+    </nav>
+<div class="backdrop"></div>
+    <section>
+        <div class="container">
+            <div class="box-1">
+                <h4>Account Settings</h4>
+                <label for="account">Username</label><br>
+                <input type="text" name="user-name" id="user-name"><br>
+                <label for="fullname">Full Name</label><br>
+                <input type="text" name="Full-name" id="full-name"><br>
+                <label for="e-mail">E-mail</label><br>
+                <input type="email" name="text" id="e-mail"><br>
+                <div class="Create-Budget">Create Budget</div>
+                <div class="View-Budget"><a href="#">View Budget</a></div>
+            </div>
+            <div class="box-2">
+                <h4>Change Password</h4>
+                <div class="password-details">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="pasword" id="password1" placeholder="Old Password"><br>
+                </div>
+                <div class="password-details">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password2" placeholder="New Password"><br>
+                </div>
+                <div class="password-details">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password3" placeholder="Confirm New Password"><br>
+                </div>
+                <div class="control-btn">
+                    <span id="cancel"><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">CANCEL</a></span>
+                    <span id="save"><a href="#">SAVE</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="new-budget-container">
+        <div class="cancel-btn">
+            <div class="btn-1"></div>
+            <div class="btn-2"></div>
+        </div>
+        <div class="child-1">
+        <label for="Gross-Budget">Gross Budget</label>
+        <input type="number" name="Gross-Budget" id="Gross-Budget">
+        </div>
+        <div class="child-2">
+            <label for="Expenditure">Expenditure</label>
+            <input type="number" name="Expenditure" id="Expenditure">
+        </div>
+        <div class="child-3">
+            <label for="Budget">Budget</label>
+            <input type="number" name="Budget" id="Budget">
+        </div>
+        <div class="save-budget">SAVE</div>
+    </div>
+    <script src="user-proflie.js"></script>
+</body>
+</html>
