@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budget-profile</title>
+    <link rel="stylesheet" href="/CSS/css/all.css">
+    <link rel="stylesheet" href="budget-profile.css">
+</head>
+<body>
+    <header>
+        <div class="toggle-btn">
+            <div class="toggle-bar-1 box"></div>
+            <div class="toggle-bar-2 box"></div>
+            <div class="toggle-bar-3 box"></div>
+        </div>
+        <div class="logo">Budg<span>etify</span></div>
+    </header>
+    <nav class="main-nav">
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/index.html">Home</a></span>
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">Login</a></span>
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/user-profile.html">Profile</a></span>
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/login-page.html">Log Out</a></span>
+            <span><a href="https://towbee98.github.io/ECX TEAM-12 PROJECT/About-Us.html">About Us</a></span>
+            <span><a href="#">Contact Us</a></span>
+            <span><a href="#">Privacy Policy</a></span>
+    </nav>
+    <div class="title">Budget Profile</div>
+    <section>
+        <div class="budget-details">
+            <div>Welcome ,<span class="user-fullname">John Arrow</div>
+            <div> Total Allocation&nbsp;&nbsp;<span class="total-allocation">#284,470</span></div>
+            <div>Unallocated&nbsp;&nbsp;<span class="unallocated">#44,980</span></div>
+        </div>
+        <div class="budget-breakdown">
+            <div class="period-title">Monthly</div>
+            <div class="item">
+                <div>
+                    <div><p class="item-name">Salaries</p><i class="fas fa-pencil-alt"></i></div>
+                    <div class="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <span class="percent-value">8%</span>
+                    <input type="number" name="update-expense" id="update-expense" placeholder="Update Amount">
+                    <i class="fas fa-plus"></i>
+                </div>
+                    <div class="item-data">
+                        <div class="item-budget">#100000</div>
+                        <div class="item-expenses">#2000</div>
+                    </div>
+            </div>
+            <div class="item">
+                <div>
+                    <div><p class="item-name">Food</p><i class="fas fa-pencil-alt"></i></div>
+                    <div class="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <span class="percent-value">5%</span><input type="number" name="update-expense" id="update-expense" placeholder="Update Amount"><i class="fas fa-plus"></i>
+                </div>
+                    <div class="item-data">
+                        <div class="item-budget">#50000</div>
+                        <div class="item-expenses">#20000</div>
+                    </div>
+            </div>
+            <div class="item">
+                <div>
+                    <div><p class="item-name">Data</p><i class="fas fa-pencil-alt"></i></div>
+                    <div class="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <span class="percent-value">7%</span><input type="number" name="update-expense" id="update-expense" placeholder="Update Amount"><i class="fas fa-plus"></i>
+                </div>
+                    <div class="item-data">
+                        <div class="item-budget">#100000</div>
+                        <div class="item-expenses">#2000</div>
+                    </div>
+            </div>
+            <div class="item">
+                <div>
+                    <div><p class="item-name">Transportation</p><i class="fas fa-pencil-alt"></i></div>
+                    <div class="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <span class="percent-value">19%</span><input type="number" name="update-expense" id="update-expense" placeholder="Update Amount"><i class="fas fa-plus"></i>
+                </div>
+                    <div class="item-data">
+                        <div class="item-budget">#71000</div>
+                        <div class="item-expenses">#70000</div>
+                    </div>
+            </div>
+        </div>
+        <div class="chart-illustration">
+        </div>    
+        <div class="add-new-expenditure-container">
+            <input type="text" name="item" id="item" placeholder="Item">
+            <input type="number" name="allocated-budget" placeholder="allocated budget">
+            <span class="add-new-expenditure">ADD</span>
+        </div>   
+        <div class="add-expenditure">Add Expenditure</div>
+    </section>
+    <div class=""></div>
+    <script src="budget-profile.js"></script>
+</body>
+</html>

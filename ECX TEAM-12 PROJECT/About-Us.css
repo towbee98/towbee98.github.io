@@ -1,0 +1,23 @@
+
+ a{
+     text-decoration: none;
+}
+
+.about-us{
+    width: 300px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 10px auto 5px auto;
+    color: #2B3252;
+    position: relative;
+    z-index: 5;
+    left: -1000px;
+    animation: moveright 2000ms  1s 1 forwards;
+}
+.team-name{
+    font-weight: bolder;
+    border: 2px dotted #EF5455;
+}
