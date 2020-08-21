@@ -22,6 +22,34 @@
             <span><a href="#">Contact Us</a></span>
             <span><a href="#">Privacy Policy</a></span>
     </nav>
+    <section>
+    <form action="" method="post">
+        <h2>Drop a message</h2>
+        <div class="user-details">
+            <div class="input-field">
+                <input type="text" name="firstname" id="firstname"class="user-1" required >
+                <label for="firstname" >FIRSTNAME</label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="lastname" id="lastname" class="user-1" required>
+                <label>LASTNAME</label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="email" id="email" class="user-1" required>
+                <label for="e-mail">E-MAIL</label>
+            </div>
+            <div class="input-field">
+            <input type="number" name="phone-number" id="phone-number" class="user-1" required>
+            <label for="phone-number">Phone Number</label>
+            </div>
+        </div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+            <input type="submit" value="Submit" id="Submit">
+        <div class="msg-sent">message sent</div>
+        <div class="msg-not-sent">message not sent</div>
+    </form> 
+    </section>
+    <div class="illustration"></div>
     <script src="contact-us.js"></script>
 </body>
 </html>
