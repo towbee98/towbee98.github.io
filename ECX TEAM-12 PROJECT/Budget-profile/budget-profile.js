@@ -3,9 +3,9 @@ const toggleBar1=document.querySelector(".toggle-bar-1");
 const toggleBar2=document.querySelector(".toggle-bar-2");
 const toggleBar3=document.querySelector(".toggle-bar-3");
 const mainNav=document.querySelector(".main-nav");
-const pencil_Icon=document.querySelector(".fa-pencil-alt");
-const add_new_expense=document.querySelector("#update-expense");
-const plus_icon=document.querySelector(".fa-plus");
+const pencil_Icon=document.querySelectorAll(".fa-pencil-alt");
+const add_new_expense=document.querySelectorAll("#update-expense");
+const plus_icon=document.querySelectorAll(".fa-plus");
 let itemList=document.getElementsByClassName("item");
 let click=0;//counter for the toggle btn
  
@@ -37,16 +37,21 @@ mainNav.addEventListener('click',()=>{
         }
     }
 })
-pencil_Icon.addEventListener('click',() =>{
-    add_new_expense.style.opacity="1";
-    plus_icon.style.opacity="1";
-})
-    plus_icon.addEventListener('click',()=>{
-        add_new_expense.style.opacity="0";
-        plus_icon.style.opacity="0";
+
+for(let k=0;k<pencil_Icon.length;k++){
+    pencil_Icon[k].addEventListener('click',()=>{
+    add_new_expense[k].style.opacity="1";
+    plus_icon[k].style.opacity="1";
     })
+}
+for(let j=0;j<plus_icon.length;j++){
+    plus_icon[j].addEventListener('click',()=>{
+        add_new_expense[j].style.opacity="0";
+        plus_icon[j].style.opacity="0";
+        })
+}
     for(i=0;i<itemList.length;i++){
-        item_budget=itemList[i].children[1].children[0].textContent;
+    item_budget=itemList[i].children[1].children[0].textContent;
     item_expenses=itemList[i].children[1].children[1].textContent;
     item_budget=item_budget.split("");
     item_expenses=item_expenses.split("");
@@ -60,3 +65,4 @@ pencil_Icon.addEventListener('click',() =>{
     progressBar.style.width=progress+"%";
     itemList[i].children[0].children[2].textContent=progress+"%";
     }
+
