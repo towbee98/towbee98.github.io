@@ -1,0 +1,234 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    background:none;
+    width: 97%;
+    align-items: center;
+    font-size: small;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.menu{
+    display: none;
+    margin-left: 20px;
+    width: 60%;
+}
+.menu ul{
+    display:flex;
+    list-style-type:none;
+    justify-content:space-around;
+}
+.toggle-btn{
+    display: flex;
+    flex-direction: column;
+    width:30px;
+    height: 20px;
+    justify-content: space-around;
+}
+.bar{
+    background-color: #04BA78;
+    width: 100%;
+    height: 3px;
+}
+.toggle-1{
+    transform: rotateZ(0) translateX(0) translateY(0);
+    transform-origin: center;
+    transition: transform 700ms ease-in-out 1s;
+}
+.toggle-2{
+    transform: rotateZ(0) translateX(0);
+    transition: transform 700ms ease-in-out 1s;
+}
+.toggle-3{
+    width: 70%;
+    opacity:1;
+    transition: opacity 700ms ease-in-out 1s;
+}
+.modal{
+    height:250px;
+    width:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    list-style-type:none;
+    position:absolute;
+    top:-1000px;
+    z-index:10;
+    opacity:1;
+    color:#04BA78;
+    text-align:center;
+    background-color:#D1D9E6;
+    border-radius:10px;
+    transition: top 500ms ease-in-out 1s;
+}
+a{
+    color: #04BA78;
+    text-decoration: none;
+}
+.tourism-picture{
+    margin: -10px -10px 0 -10px;
+    padding: 0;
+    width: 140%;
+    height: 200px;
+    background: url("tourism-image.jpg") 0% 60%/cover ;
+}
+section{
+    margin: auto;
+    width: 80%;
+}
+h2{
+    text-align: center;
+    color: #85DDBD;
+}
+form{
+    background: #04BA78;
+    padding:20px;
+    border-radius: 20px;
+}
+.input-field{
+    position: relative;
+    border-bottom:2px solid;
+    margin-top: 40px;
+    color: white;
+    width:80% ;
+}
+label{
+    position: absolute;
+    top: 0;
+    font-size: 13px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+#firstname,#lastname,#email,#phone-number{
+        display: block;
+        width: 90%;
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        color: white;
+}
+.user-1:focus ~ label,.user-1:valid ~label{
+    transform: translateY(-20px);
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: none;  
+    border-radius: 10px;
+    width: 80%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+#Submit{
+    width: 100%;
+    background: white;
+    font-size: medium;
+    font-weight: bold;
+    color:#04BA78;
+    border-radius: 10px;
+
+  }
+#Submit:hover{
+    background: #04BA78;
+    color: white;
+}
+.msg-sent,.msg-not-sent{
+    display: none;
+}
+.info{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.info p{
+    font-size: small;
+}
+footer{
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,auto);
+    background-color: #04BA78;
+    margin: 0 -10px -10px -10px;
+    padding-left: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+.social-media{
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    grid-column: 3/-1;
+    justify-content: space-around;
+}
+
+.copyright{
+    grid-column: 1/4;
+    text-align: center;
+}
+@keyframes rotation{
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(1440deg);
+    }
+    
+}
+@media(min-width:370px){
+    #Submit{
+        width: 30%;
+    }
+    .info{
+        width: 60%;
+    }
+    
+}
+@media(min-width:579px){
+    footer{
+        grid-template-columns: 40% 20% 40%;
+    }
+    .toggle-btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+}
+@media(min-width:793px){
+   header{
+       justify-content: space-between;
+   }
+   .menu{
+       margin-left: 0;
+   }
+   section{
+       width: 40%;
+   }
+   .info{
+    width: 50%;
+}
+}

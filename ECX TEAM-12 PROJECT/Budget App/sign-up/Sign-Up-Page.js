@@ -4,10 +4,10 @@ const toggleBar2=document.querySelector(".toggle-bar-2");
 const toggleBar3=document.querySelector(".toggle-bar-3");
 const mainNav=document.querySelector(".main-nav");
 let form = document.forms[0];
-let enteredUserName=document.forms[0][0].value;
-let enteredFullname=document.forms[0][1].value;
-let enteredPassword=document.forms[0][3].value;
-let enteredEmail=document.forms[0][2].value;
+let enteredUserName=document.forms[0][0];
+let enteredFullname=document.forms[0][1];
+let enteredPassword=document.forms[0][3];
+let enteredEmail=document.forms[0][2];
 const signUpBtn=document.forms[0][4];
 const successLogin=document.querySelector(".Successful-login");
 const unsuccessLogin=document.querySelector(".Unsuccessful-login");
@@ -40,31 +40,32 @@ mainNav.addEventListener('click',function(){
     }
 })
 signUpBtn.addEventListener('click',function(){//this controls what happens when the sign up button is clicked
-    //event.preventDefault();
-    if(enteredUserName &&  enteredPassword && enteredFullname && enteredEmail){
-        let params={user:enteredUserName,password:enteredPassword,fullname:enteredFullname};
+    event.preventDefault();
+    if(enteredUserName.value &&  enteredPassword.value && enteredFullname.value && enteredEmail.value){
+        console.log("true");
+        let params={user:enteredUserName,password:enteredPassword,fullname:enteredFullname,email:enteredEmail};
         const url=`https://budgetify20.herokuapp.com/api/user`;
         makeApiCall(url,params);
     } 
     enteredUserName="";
     enteredPassword="";
     enteredFullname="";
-    enteredEmail="";
-  
-    
+    enteredEmail=""; 
 })
 
     function makeApiCall(url,params){
         let xhr=new XMLHttpRequest();
         console.log(xhr.readyState);
         xhr.onreadystatechange=() =>{
+            console.log(xhr.responseType);
+            response=xhr.response;
             if(xhr.readyState===4 && xhr.status===200){
-                console.log(xhr.responseText);
-                response=JSON.parse(xhr.response);  
+               // console.log(xhr.responseText);  
                 successLogin.innerHTML=response;  
             }
             else
                 console.log("loading");
+                unsuccessLogin.innerHTML=response;
         }
         xhr.open("POST",url,true);
         xhr.send(JSON.stringify(params));
