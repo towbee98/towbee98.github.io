@@ -104,6 +104,7 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: none;
+  margin-right: 10px;
 }
 
 .bar {
@@ -326,6 +327,9 @@ form {
   }
   .menu {
     display: none;
+  }
+  #email {
+    width: 80%;
   }
 }
 

@@ -62,6 +62,7 @@ a{
     height: 20px;
     justify-content: space-around;
     display: none;
+    margin-right: 10px;
 }
 .bar{
     background-color: var(--secondary-color-1,black);
@@ -191,6 +192,9 @@ form{
     }
     .menu{
         display: none;
+    }
+    #email{
+        width: 80%;
     }
 }
 @media(max-width:279px){
