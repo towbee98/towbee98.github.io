@@ -10,7 +10,7 @@ const filename=document.querySelector(".file-details");
 const message=document.querySelector(".message");
 const fileType=["/csv"];
 let click=0; // this is a counter to contrl the clicks on the toggle button
-
+const formData = new FormData();
 toggleBtn.addEventListener('click',()=>{
     if(click%2===0){
         modal.style.top='30px';
@@ -43,8 +43,10 @@ modal.addEventListener('click',()=>{
     }
 })
 file.addEventListener('change',function(){
-    if(fileType.includes(file.files[0].type)){
+    if(/.*\.csv$/.test(file.files[0].name)){
         filename.textContent=file.files[0].name;
+   // formData.append('myFile', file.files[0]);
+   // console.log(formData);
     }
     else{
         setTimeout(()=>{
@@ -55,3 +57,60 @@ file.addEventListener('change',function(){
     }
 })
 
+submit.addEventListener('click',function(){
+    event.preventDefault();
+    if(password.value){
+        console.log(formData);
+        let params={
+            sampleFile:file.files[0],
+            secret:password.value
+        }
+        const url=`https://cors-anywhere.herokuapp.com/https://ecx.herokuapp.com/api/upload`; 
+        $.ajax({//this is used to control the loader
+            type:"POST",
+            url:url,
+            dataType:"json",
+
+            beforeSend:function(){//this 
+                $(".loader").show();
+            },
+
+            complete:function(){
+                $(".loader").hide();
+            }
+            
+        })
+        makeApiCall(url,params);
+        email.value="";
+    }
+})
+makeApiCall=(url,params)=>{
+    const data=JSON.stringify(params);
+    const headers=new Headers({
+        'Accept':'application/json',
+        'Content-Type':'application/json'
+    });
+    const request= new Request(url,{
+        method:'POST',
+        headers:headers,
+        body:data
+    })
+    fetch(request)
+        .then((response)=>{
+            if(response.ok){
+                return response.json();
+            }
+            else{
+                return Promise.reject(response);
+            }
+        })
+        .then((response)=>msg=Object.values(response)[0])
+        .then(()=>{
+            message.textContent=msg;
+            message.style.display="block";
+        })
+        .catch(error =>{
+            console.log(` error occured : ${error}`);
+            message.textContent="Sorry,email not found";
+        })        
+}
