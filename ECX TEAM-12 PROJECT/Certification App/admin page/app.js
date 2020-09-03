@@ -8,7 +8,6 @@ const password=document.forms[0][1];
 const submit=document.forms[0][2];
 const filename=document.querySelector(".file-details");
 const message=document.querySelector(".message");
-const fileType=["/csv"];
 let click=0; // this is a counter to contrl the clicks on the toggle button
 const formData = new FormData();
 toggleBtn.addEventListener('click',()=>{
@@ -62,7 +61,7 @@ submit.addEventListener('click',function(){
     if(password.value){
         console.log(formData);
         let params={
-            sampleFile:file.files[0],
+            sampleFile:`${file.files[0]}`,
             secret:password.value
         }
         const url=`https://cors-anywhere.herokuapp.com/https://ecx.herokuapp.com/api/upload`; 
@@ -81,7 +80,7 @@ submit.addEventListener('click',function(){
             
         })
         makeApiCall(url,params);
-        email.value="";
+        password.value="";
     }
 })
 makeApiCall=(url,params)=>{
