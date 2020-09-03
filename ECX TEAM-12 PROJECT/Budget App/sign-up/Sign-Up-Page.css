@@ -178,9 +178,10 @@ label{
     left:-140px;
     position: absolute;
 }
-.Successful-login,.Unsuccessful-login{
+.sign-up-message,.login-link,.loader{
     display: none;
 }
+
 @keyframes movedown{
     0%{
         top: -1000px;

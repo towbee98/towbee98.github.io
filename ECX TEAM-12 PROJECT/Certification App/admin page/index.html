@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="icon">ECX</div>
+            <div class="title">
+                <span>Engineering</span>
+                <span>Career Expo</span>
+                <span>Internship</span>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a  href="#">Home</a></li>
+            <li><a href="#">Administration</a></li>
+            <li><a href="#"> Contact</a></li>
+            <li><a href="#">About</a> </li>
+        </ul>
+        <div class="toggle-btn">
+            <div class="toggle-1 bar"></div>
+            <div class="toggle-2 bar"></div>
+            <div class="toggle-3 bar"></div>
+        </div>
+    </header>
+    <div class="modal">
+        <div><a  href="#">Home</a></div>
+        <div><a href="#">Administration</a></div>
+        <div><a href="#"> Contact</a></div>
+        <div><a href="#">About</a> </div>
+    </div>
+   
+    <form>
+        <h3>Administration Page</h3>
+        <label for="file">File</label>
+        <div>
+            <input type="file" name="file" id="file" placeholder="upload file" required>
+        </div>
+        <label for="password">Password</label>
+        <div>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <input type="submit" value="ENTER" id="submit">
+        <span class="message"></span><span class="loader"><img src="5.svg" alt="loading"></span>
+    </form>
+    
+    <script src="app.js"></script>
+</body>
+</html>

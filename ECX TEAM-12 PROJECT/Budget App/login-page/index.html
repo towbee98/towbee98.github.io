@@ -6,6 +6,7 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="login-page.css">
     <link rel="stylesheet" href="/CSS/css/all.css">
+    <script src="/ECX TEAM-12 PROJECT/Budget App/sign-up/js_folder/jquery-3.4.1.js"></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
 <section>
     <img src="user-icon.png" alt="" class="user-icon">
     <h3>Sign In</h3>
-    <form action="#" method="POST">
+    <form>
         <div class="input-field">
             <i class="fas fa-user"></i>
             <input type="text" name="username" id="username" placeholder="USERNAME" required>
@@ -36,9 +37,9 @@
         <input type="password" name="password" id="password" placeholder="PASSWORD" required>
         </div><br>
         <input type="submit" value="Login" id="login-btn"><br>
-        <div class="Successful-login">Login Successful!</div>
-        <div class="Unsuccessful-login">Invalid Username or password!</div>
+        <div class="login-message"></div>
         <span class="remember"><input type="checkbox" name="remember-me" id="remember-me"><label>Remember me</label></span>
+        <div class="loader"><img src="/ECX TEAM-12 PROJECT/Budget App/sign-up/5.svg" alt="loading..." ></div>
         <label for="Forgot-password" class="forgot-password"><a href="#">Forgot Password?</a></label>
     </form> 
     <div class="line-through"></div>

@@ -152,6 +152,13 @@ i{
     margin-left: -10px;
     margin-right: 60px;
 }
+.loader{
+    display: none;
+}
+.loader img{
+    width: 10px;
+    height: 10px;
+}
 .forgot-password{
     margin-right: 0;
 }

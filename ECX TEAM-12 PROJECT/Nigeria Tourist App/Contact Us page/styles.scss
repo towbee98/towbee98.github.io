@@ -8,7 +8,7 @@ header{
     justify-content: space-between;
     position: absolute;
     background:none;
-    width: 97%;
+    width:97%;
     align-items: center;
     font-size: small;
     font-weight: bolder;
@@ -171,7 +171,6 @@ input[type=number] {
     font-weight: bold;
     color:#04BA78;
     border-radius: 10px;
-
   }
 #Submit:hover{
     background: #04BA78;
@@ -227,7 +226,6 @@ footer .words{
     100%{
         transform: rotateZ(1440deg);
     }
-    
 }
 @media(min-width:370px){
     #Submit{
@@ -236,7 +234,6 @@ footer .words{
     .info{
         width: 60%;
     }
-    
 }
 @media(min-width:579px){
     footer{
@@ -248,7 +245,6 @@ footer .words{
     .menu{
         display: block;
     }
-
 }
 @media(min-width:793px){
    header{
