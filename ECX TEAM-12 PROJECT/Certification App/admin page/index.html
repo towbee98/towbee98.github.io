@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS/css/all.css">
     <script src="jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    
+   <header>
         <div class="logo">
-            <div class="icon">ECX</div>
+            <div class="icon"></div>
             <div class="title">
                 <span>Engineering</span>
                 <span>Career Expo</span>
@@ -35,12 +37,20 @@
         <div><a href="#"> Contact</a></div>
         <div><a href="#">About</a> </div>
     </div>
-   
+   <section>
+    <h3>Administration Page</h3>
     <form>
-        <h3>Administration Page</h3>
-        <label for="file">File</label>
-        <div>
-            <input type="file" name="file" id="file" placeholder="upload file" required>
+       
+        <label for="file-input">File</label>
+        <div class="input-1">
+            <div>
+                <i class="fas fa-file-csv fa-lg"></i>
+                <p class="file-details">Upload File...</p>
+            </div>
+           <label for="file">
+               <img src="upload.svg" alt="upload files..." class="upload-icon" >
+            </label>
+            <input type="file" name="file" id="file" accept=".csv" required>
         </div>
         <label for="password">Password</label>
         <div>
@@ -49,7 +59,7 @@
         <input type="submit" value="ENTER" id="submit">
         <span class="message"></span><span class="loader"><img src="5.svg" alt="loading"></span>
     </form>
-    
+</section>
     <script src="app.js"></script>
 </body>
 </html>

@@ -6,7 +6,9 @@ const modal=document.querySelector(".modal");
 const file=document.forms[0][0];
 const password=document.forms[0][1];
 const submit=document.forms[0][2];
+const filename=document.querySelector(".file-details");
 const message=document.querySelector(".message");
+const fileType=["/csv"];
 let click=0; // this is a counter to contrl the clicks on the toggle button
 
 toggleBtn.addEventListener('click',()=>{
@@ -40,3 +42,16 @@ modal.addEventListener('click',()=>{
         }
     }
 })
+file.addEventListener('change',function(){
+    if(fileType.includes(file.files[0].type)){
+        filename.textContent=file.files[0].name;
+    }
+    else{
+        setTimeout(()=>{
+            message.textContent="sorry this is not a csv file";
+            message.style.color="red";
+            message.style.fontWeight="bold";
+        },1000)
+    }
+})
+
