@@ -23,9 +23,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   width: 100%;
 }
@@ -36,43 +36,12 @@ a {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.icon {
-  width: 55px;
-  height: 30px;
-  background-image: url("ecx logo.png");
-  background-position: 50% 50%;
+  background-image: url("ecx-logo.png");
+  background-position: 20% 10%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 0.6rem;
-  font-weight: bold;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.title span {
-  margin-top: -2px;
+  width: 150px;
+  height: 50px;
 }
 
 .menu {
