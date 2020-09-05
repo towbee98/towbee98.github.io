@@ -237,6 +237,7 @@ h1 {
 }
 
 .signature {
+  margin-top: 0;
   font-family: 'dearjoe fonts';
 }
 
@@ -341,6 +342,9 @@ h1 {
   .container {
     height: 400px;
   }
+  .position {
+    font-size: 7px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -354,6 +358,26 @@ h1 {
   }
   #email {
     width: 80%;
+  }
+  .container {
+    height: 300px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .sub-info-1 {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 477px) {
+  .container {
+    width: 353.6px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 30px;
   }
 }
 
